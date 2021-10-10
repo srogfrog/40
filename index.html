@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Host's Highest Placement is a Prime Number</title>
+    <link href="./index.css" rel="stylesheet" />
+    <script>
+        function reveal_c2(){
+            event.target.style.color = "lightgray";
+        }
+        function popp(){
+            var popup = document.getElementById("actualP");
+            if(event.target.id !== 'texts'){
+                popup.classList.toggle("show");
+            }
+        }
+        function correct_key(){
+            if(event.keyCode == 13){
+                if(event.target.value === "ABCD"){
+                    event.target.remove();
+                    var newClue = document.getElementById("toShow");
+                    var keyId = document.getElementById("keyy");
+                    keyId.innerText = ""
+                    newClue.innerText = "This host has had over 15 votes cast against them in their SRorgs career"
+                }
+                console.log(event.target.value);
+            }
+        }
+        function redir(page){
+            window.location = page + ".html";
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Galindo&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div style="background: linear-gradient(rgb(20, 5, 73), black); display: flex; justify-content: space-between; font-size: 0;">
+        <div class="jupiter jupiter_spacer"></div>
+    </div>
+    <div style="display:flex; background-color:#FFECDB;">
+        <div class = "nums_1 nums_1_spacer"></div>
+        <div class="intro" style="justify-content: space-between;">
+            <section class="intro-2">Welcome to Jupiter. Due to its association with the King of the Gods, Dante made this the planet of just rulers, leaders of humankind who had upheld the values of justice.</section>
+            <section class="intro-2">We too at SRorgs have decided to honor our past leaders with this planet, so original SRorgs Host Behtaji has made a website for you to explore.</section>
+            <section class="intro-2">As we celebrate 40 seasons of SRorgs, it's only fitting to recognize the Hosts that brought us here, from Nika & Behtaji, to Riley, Potato, Ashton, and Jacob.</section>
+            <section class="intro-2">Find the correct command and use it in your submissions channel in the main server to move on. </section>
+            <section class="intro-2">But be warned... while you do not have to be in a special server where you can be noticed by others for this stage of the idol hunt, as you did for the <span class="popup" onclick="popp()">previous<span class="popuptext" id="actualP"><span id="keyy">C1 Key:</span><br /><textarea id="texts" style="width: 80%" onkeypress="correct_key()"></textarea><br /><span id="toShow"></span></span></span> stages, you could still face consequences for what you do there. False commands are hidden on this page, and if you use one, you will face a punishment.</section>
+        </div>
+        <div class = "nums_2 nums_1_spacer"></div>
+    </div>
+    <div style="display: flex; justify-content: space-between;">
+        <div class="waves_1 waves_1_spacer"></div>
+    </div>
+    <div class="intro-2" style="justify-content: space-between; background-color:#DA662C; color:white">
+        <div>
+            <section style="padding: 10px;">Here lies the temples of main hosts of the past. To continue your idol-hunting journey, you must figure out which temple has the right command.</section>
+            <section style="padding: 10px;">We'll give you a little clue, but some more are hidden on this page. Some of the findable clues will require prior clues to unlock. Tread carefully, though, for if you enter the wrong temple, a punishment shall await.</section>
+            <section style="padding: 10px;">When you have made your decision, click on the icon below the temple of your choice.</section>
+            <br /><br />
+            <section style="padding: 10px;">Your First Clue: <em>this prior host was involved with Season <strong>15</strong> or <strong>14</strong> in some capacity</em></section>
+            <section class = "heehee" style="font-size:13px;" onclick="reveal_c2()"><em>This host has played with multiple winners. C1 Key: <strong>ABCD</strong></em></section><br />
+        </div>
+        <div style="display: flex; justify-content: space-between; font-size: 13px;">
+            <section class = "testos">Temple of Nika</section>
+            <section class = "testos">Temple of Behtaji</section>
+            <section class = "testos">Temple of Riley</section>
+            <section style="padding: 0 0.5% 0 1.5%;">Temple of Potato</section>
+            <section class = "testos">Temple of Ashton</section>
+            <section class = "testos">Temple of Jacob</section>
+        </div>
+        <div style="display: flex; justify-content: space-between; font-size: 12px;">
+            <div class="templ templ_spacer"></div>
+            <div class="templ templ_spacer"></div>
+            <div class="templ templ_spacer"></div>
+            <div class="templ templ_spacer"></div>
+            <div class="templ templ_spacer"></div>
+            <div class="templ templ_spacer"></div>
+        </div>
+        <br />
+        <div style="display: flex; justify-content: space-between; font-size: 12px; padding: 0 2.5% 0 2.5%">
+            <div class="token token_spacer" onclick="redir('15152999e4f8d343989729e38793678e')"></div>
+            <div class="token token_spacer" onclick="redir('3bb8f145fe5924a0ba3694c4bbffb176')"></div>
+            <div class="token token_spacer" onclick="redir('30c6a50ceed1bb7ecd0f465159b970bb')"></div>
+            <div class="token token_spacer" onclick="redir('8ee2027983915ec78acc45027d874316')"></div>
+            <div class="token token_spacer" onclick="redir('014cf0a8b3db0da6fb767f8aa9c96ec3')"></div>
+            <div class="token token_spacer" onclick="redir('736b19f69aaca691fecd8400294cc383')"></div>
+        </div>
+    </div>
+</body>
+</html>

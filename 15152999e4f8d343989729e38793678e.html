@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple of Nika</title>
+    <link href="./index.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Galindo&display=swap" rel="stylesheet"> 
+    <script>
+        function del_pot(){
+            event.target.remove();
+            document.getElementById('hee').innerText = "!temple_of_nika";
+        }
+    </script>
+</head>
+<body>
+    <div style="color:#550000; background-color:#FFECDB;">
+        <div style="display: flex; justify-content: space-between; margin: auto;" class="templ templ_spacer"></div>
+        <section class="intro-2" style="justify-content: space-between;">
+            Welcome to the Temple of Nika. The original main host and SRorgs founder, Nika created the subreddit in August 2016 and hosted for 10 seasons. Break the pot (by clicking it) below to receive your command.
+        </section>
+        <div style="display: flex; justify-content: space-between; margin: auto;" class="pot pot_spacer" onclick="del_pot()"></div><div id="hee" style="text-align: center; font-size: 20px;"></div>
+    </div>
+</body>
+</html>

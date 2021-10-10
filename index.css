@@ -1,0 +1,120 @@
+.intro {
+    background-color: #FFECDB;
+    text-align: center;
+    color: #550000;
+}
+.waves_1{
+    background: url('./waves_1.svg');
+}
+.waves_1_spacer{
+    aspect-ratio: 900/200;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.nums_1{
+    background: url('./w_1.svg');
+}
+.nums_2{
+    background: url('./w_2.svg');
+}
+.templ{
+    background: url('./templ.svg');
+}
+.token{
+    background: url('./token.svg');
+}
+.jupiter{
+    background: url('./jupi.svg');
+}
+.jupiter_spacer{
+    aspect-ratio: 900/162;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.templ_spacer{
+    aspect-ratio: 41/37;
+    width:10%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+.token_spacer{
+    aspect-ratio: 21/21;
+    width:5%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+.nums_1_spacer{
+    aspect-ratio: 50/103;
+    width:30%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.intro-2 {
+    padding: 10px;
+    font-family: 'Galindo';
+    text-align: center;
+}
+.heehee{
+    color:#DA662C; 
+}
+.heehee:hover{
+    background-color:#C25823;
+    color:#C25823;
+}
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.popup .popuptext{
+    visibility: hidden;
+    width: 150px;
+    background-color: #550000;
+    color: white;
+    text-align: center;
+    font-family: 'Galindo', cursive;
+    font-size: 10px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -75px;
+}
+.popup .show{
+    visibility: visible;
+    animation: fadeIn 1s;   
+}
+.testos {
+    padding: 0 1.5% 0 1.5%;
+}
+html {
+    cursor: pointer;
+}
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+.pot_spacer{
+    height: 93px;
+    width: 48px;
+    justify-content: flex-start;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pot{
+    background-image: url('./pot.svg');
+    cursor: url('./cursor.svg'), auto;
+}
